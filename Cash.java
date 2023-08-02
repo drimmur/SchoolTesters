@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -7,7 +6,7 @@ public class Cash {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sum = scanner.nextInt();
-       int many = scanner.nextInt();
+        int many = scanner.nextInt();
         getChange(sum, many);
     }
 
@@ -117,12 +116,12 @@ public class Cash {
                             change.put(1, 1);
                         }
                     }
-                }else {
+                } else {
                     System.out.println("Сдачи нет");
                     return;
                 }
             }
-        }else {
+        } else {
             System.out.println("Мало денег");
             return;
         }
@@ -132,7 +131,7 @@ public class Cash {
             Integer value = entry.getValue();
             text += key + " руб: " + value + " шт., ";
         }
-        System.out.print(text.substring(0, text.length()-2));
+        System.out.print(text.substring(0, text.length() - 2));
     }
 
 }
